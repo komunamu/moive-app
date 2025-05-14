@@ -16,13 +16,13 @@ function Home() {
     
   }
   Movie.propTypes = {
+    id: PropTypes.number.isRequired,
     coverImg: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     year: PropTypes.number.isRequired,
-    summary: PropTypes.string.isRequired,
     genres: PropTypes.arrayOf(PropTypes.string).isRequired
   }
-  
+
   useEffect(() => {
     getMovices();
   }, []);
@@ -32,10 +32,10 @@ function Home() {
         <div>{movies.map(movie =>
             <Movie
               key={movie.id}
+              id ={movie.id}
               coverImg = {movie.medium_cover_image}
               title={movie.title}
               year={movie.year}
-              summary={movie.summary}
               genres={movie.genres}
             />
             )}
