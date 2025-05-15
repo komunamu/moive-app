@@ -1,4 +1,5 @@
-import { Link } from "react-router";
+// import { Link } from "react-router-dom"; // 이전 제안
+import { Link } from "react-router"; // App.js와 일치시키려면
 
 function Movie({id, coverImg, title, year, genres}) {
   return (<div>

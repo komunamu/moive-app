@@ -5,9 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6; /* 앱 전체 배경색 */
+  color: #333; /* 기본 글자색 */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* 추가적인 글로벌 리셋이나 스타일이 필요하면 여기에 작성 */
+* {
+  box-sizing: border-box;
 }
